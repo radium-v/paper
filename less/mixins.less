@@ -1,0 +1,49 @@
+// Repeating image background mixin
+.retina(@img, @square) {
+    background-image: url(~"@{img}.png");
+
+    @media @retina {
+        background-image: url(~"@{img}_@2X.png");
+        background-size: @square @square;
+        background-position: center;
+    }
+}
+
+// Easy for making squares
+.dimensions(@w) {
+	height: @w;
+	width: @w;
+}
+
+// Overloaded dimension mixin
+.dimensions(@w, @h) when (isnumber(@h)) {
+	height: @w * @h;
+	width: @w;
+}
+
+.dimensions(@w, @h) when not (isnumber(@h)) {
+	height: @h;
+	width: @w;
+}
+
+.pseudo() {
+	content: '';
+    display: block;
+    position: absolute;
+}
+
+.transform(@args) {
+    -webkit-transform: @arguments;
+       -moz-transform: @arguments;
+        -ms-transform: @arguments;
+         -o-transform: @arguments;
+            transform: @arguments;
+}
+
+.transform-origin(@args) {
+    -webkit-transform-origin: @arguments;
+       -moz-transform-origin: @arguments;
+        -ms-transform-origin: @arguments;
+         -o-transform-origin: @arguments;
+            transform-origin: @arguments;
+}

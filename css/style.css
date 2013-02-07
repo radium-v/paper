@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../i/retina_wood.png);
+}
+@media only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  body {
+    background-image: url(../i/retina_wood_@2X.png);
+    background-size: 512px 512px;
+    background-position: center;
+  }
+}
+header {
+  margin-bottom: 1em;
+}
+.container {
+  display: block;
+}
+.container.main {
+  height: 58.235294117647065em;
+  width: 45em;
+  margin: 2em auto;
+}
+.content p {
+  line-height: 1.3;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.timestamp {
+  display: block;
+  margin-bottom: 1em;
+}
+.paper {
+  background-image: url(../i/paper_fibers.png);
+  -webkit-transform: rotateZ(4deg);
+  -moz-transform: rotateZ(4deg);
+  -ms-transform: rotateZ(4deg);
+  -o-transform: rotateZ(4deg);
+  transform: rotateZ(4deg);
+  -webkit-transform-origin: 30% 1em;
+  -moz-transform-origin: 30% 1em;
+  -ms-transform-origin: 30% 1em;
+  -o-transform-origin: 30% 1em;
+  transform-origin: 30% 1em;
+  background-size: 50%;
+  border-radius: 150em 2em 0.5em 0.5em / 2em 50em 0.5em 0.5em;
+  box-shadow: 0 1em 4em rgba(0, 0, 0, 0.2);
+  font: 0.8em 'Courier New', monospace;
+  overflow: hidden;
+  padding: 5em;
+  position: relative;
+}
+@media only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .paper {
+    background-image: url(../i/paper_fibers_@2X.png);
+    background-size: 410px 410px;
+    background-position: center;
+  }
+}
+@media only screen and (min-device-width: 320px) and max-device-width: 480px) {
+  .paper {
+    background: #FF00FF;
+  }
+}
+.paper::before,
+.paper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.paper::before {
+  -webkit-transform: rotateZ(5deg);
+  -moz-transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  -o-transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
+  box-shadow: 0 0 3em 1em rgba(64, 64, 64, 0.2), inset 0 3em 6em rgba(64, 64, 64, 0.2);
+  height: 0;
+  right: -1em;
+  width: 50%;
+  z-index: 2;
+}

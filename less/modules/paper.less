@@ -1,0 +1,32 @@
+.paper {
+    .retina(@paper-fibers, 410px);
+    .transform(rotateZ(4deg));
+    .transform-origin(30% 1em);
+    background-size: 50%;
+    border-radius: ~"150em 2em 0.5em 0.5em / 2em 50em 0.5em 0.5em";
+    box-shadow: 0 1em 4em rgba(0, 0, 0, 0.2);
+    font: 0.8em 'Courier New', monospace;
+    overflow: hidden;
+    padding: 5em;
+    position: relative;
+
+    @media @small {
+        background: #FF00FF;
+    }
+
+    &::before,
+    &::after {
+        .pseudo();
+        top: 0;
+    }
+
+    &::before {
+        .transform(rotateZ(5deg));
+        box-shadow: 0 0 3em 1em rgba(64, 64, 64, 0.2),
+            inset 0 3em 6em rgba(64, 64, 64, 0.2);
+        height: 0;
+        right: -1em;
+        width: 50%;
+        z-index: 2;
+    }
+}
