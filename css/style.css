@@ -161,11 +161,11 @@ header {
 }
 .paper {
   background-image: url(../i/paper_fibers.png);
-  -webkit-transform: rotateZ(4deg);
-  -moz-transform: rotateZ(4deg);
-  -ms-transform: rotateZ(4deg);
-  -o-transform: rotateZ(4deg);
-  transform: rotateZ(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
   -webkit-transform-origin: 30% 1em;
   -moz-transform-origin: 30% 1em;
   -ms-transform-origin: 30% 1em;
@@ -191,22 +191,19 @@ header {
     background: #FF00FF;
   }
 }
-.paper::before,
-.paper::after {
+.paper::before {
   content: '';
   display: block;
   position: absolute;
-  top: 0;
-}
-.paper::before {
-  -webkit-transform: rotateZ(5deg);
-  -moz-transform: rotateZ(5deg);
-  -ms-transform: rotateZ(5deg);
-  -o-transform: rotateZ(5deg);
-  transform: rotateZ(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
   box-shadow: 0 0 3em 1em rgba(64, 64, 64, 0.2), inset 0 3em 6em rgba(64, 64, 64, 0.2);
   height: 0;
   right: -1em;
+  top: 0;
   width: 50%;
   z-index: 2;
 }
