@@ -1,13 +1,15 @@
+@small-device-width: 640px;
+@normal-device-width: 768px;
+
 // High-dpi media query declaration
 @retina:
-    ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
-    ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
-    ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
-    ~"only screen and (min-device-pixel-ratio: 1.5)",
-    ~"only screen and (min-resolution: 144dpi)",
-    ~"only screen and (min-resolution: 1.5dppx)";
+    ~"only screen and (-webkit-min-device-pixel-ratio: 1.3)",
+	~"only screen and (-o-min-device-pixel-ratio: 13/10)",
+	~"only screen and (min-resolution: 120dpi)";
 
-@small: ~"only screen and (max-width: 640px)";
+@mobile: ~"only screen and (max-width: @{small-device-width})";
+
+@desktop: ~"only screen and (min-width: @{small-device-width})";
 
 // Assumed Image directory
 @img-base: "../i";

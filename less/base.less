@@ -4,12 +4,14 @@
 
 body {
     .retina(@body-bg, 512px);
+    font: 1rem/1.5 'Courier New', monospace;
+    -webkit-perspective: flat;
 }
 
 header {
     margin-bottom: 1em;
 
-    @media @small {
+    @media @mobile {
         margin-bottom: 1.5em;
     }
 }
@@ -21,7 +23,7 @@ header {
         .dimensions(45em, 11/8.5); // the ratio of a US Letter sheet of paper :)
         margin: 2em auto;
 
-        @media @small {
+        @media @mobile {
             .dimensions(80%, auto);
             background-position: 0 0;
         }
@@ -31,12 +33,15 @@ header {
 .content {
     p {
         line-height: 1.3;
-        margin-bottom: 1em;
-        text-align: justify;
+        margin: 0 0 1em;
 
-        @media @small {
+        @media @mobile {
             line-height: 1.9;
             margin: 36px 0;
+        }
+
+        @media @desktop {
+            text-align: justify;
         }
     }
 }
@@ -45,7 +50,7 @@ header {
     display: block;
     margin-bottom: 1em;
 
-    @media @small {
+    @media @mobile {
         margin-bottom: 1.8em;
     }
 }
